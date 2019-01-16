@@ -17,3 +17,9 @@
    	color: royalblue; 
    	font-family: courier;
    }
+
+   p.intro {
+   	font-family: comic sans ms; 
+   	text-align: center; 
+   	color: lime;
+   }
