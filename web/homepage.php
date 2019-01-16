@@ -4,17 +4,6 @@
    <meta charset="utf-8"/>
    <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <title>J.Noble's Homepage</title>
-   <style>
-   table, th, td{
-   	   border: 1px solid black;
-   }
-
-   #hello {
-   	color: blue;
-   	font-size: 75px;
-   }
-   
-   </style>
 </head>
 <body style="background-color: grey;">
    <div style="text-align: center; margin: auto; width: 800px;">
