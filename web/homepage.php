@@ -7,8 +7,8 @@
    <link rel="stylesheet" type="text/css" href="homepage.css">
 </head>
 <body style="background-color: grey;">
-   <div style="text-align: center; margin: auto; width: 800px;">
-      <h1 style="color: royalblue; font-family:courier;"><i>Noble's Homepage</i></h1>
+   <div class="center">
+      <h1 class="title"><i>Noble's Homepage</i></h1>
       <input type="button" onclick="document.getElementById('hello').innerHTML = 'Jessen is king!'" value="Click Here!">
       <h1 id="hello"></h1>
    </div>
