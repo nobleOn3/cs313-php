@@ -19,7 +19,6 @@
    }
 
    p.intro {
-   	font-family: comic sans ms; 
-   	text-align: center; 
+   	font-family: comic sans ms; ; 
    	color: lime;
    }
