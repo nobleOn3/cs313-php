@@ -4,6 +4,7 @@
    <meta charset="utf-8"/>
    <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <title>J.Noble's Homepage</title>
+   <link rel="stylesheet" type="text/css" href="web/homepage.css">
 </head>
 <body style="background-color: grey;">
    <div style="text-align: center; margin: auto; width: 800px;">
