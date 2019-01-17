@@ -2,7 +2,7 @@
 <html>
 <header>
 	<?php
-	   $page = ;
+	   $page = NULL;
 
 	   function makeClassActive() {
 
