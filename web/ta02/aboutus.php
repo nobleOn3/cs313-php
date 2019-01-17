@@ -15,7 +15,7 @@
    li {
    	float: left;
    }
-   
+
    li a {
    	display:block;
    	padding:8px;
@@ -35,7 +35,7 @@
 </head>
 <body style="background-color: grey;">
 	<?php 
-      include "./header.php"; 
+      include "./header.php" 
     ?>
    <div>
       <h1><i>About us</i></h1>

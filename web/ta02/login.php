@@ -36,7 +36,7 @@
 </head>
 <body style="background-color: grey;">
    <?php 
-      include "./header.php"; 
+      include "./header.php" 
    ?>
    <div>
       <h1><i>Login</i></h1>
