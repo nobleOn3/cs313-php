@@ -7,6 +7,7 @@
    <link rel="stylesheet" type="text/css" href="">
 </head>
 <body style="background-color: grey;">
+   <?php include('header.php'); ?>
    <div>
       <?php 
          $welvar = NULL;
