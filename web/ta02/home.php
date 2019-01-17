@@ -39,6 +39,7 @@
          include "./header.php"
       ?>
    </div>
+   <br/>
    <div>
       <?php 
          $welvar = NULL;
