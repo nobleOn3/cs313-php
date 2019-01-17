@@ -40,7 +40,7 @@
       ?>
    </div>
    <br/>
-   <div>
+   <div style="float: none;">
       <?php 
          $welvar = NULL;
          if ($welvar == NULL) {
