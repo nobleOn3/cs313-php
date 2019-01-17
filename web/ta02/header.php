@@ -1,6 +1,6 @@
 <h1>Totally Not Nike's</h1>
 <?php
-   $page = "__FILE__";
+   $page = basename(__File__);
    }
 <nav>
     <ul>
