@@ -5,6 +5,28 @@
    <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <title>Totally not Nike's</title>
    <!--<link rel="stylesheet" type="text/css" href="">-->
+   <style>
+   ul {
+   	list-style-type: none;
+   	margin: 0;
+   	padding: 0;
+   }
+
+   li {
+   	float: left;
+   }
+
+   li a.active {
+   	 background-color: #4CAF50;
+   	 color: white;
+   }
+
+   li a:hover:not(.active) {
+   	background-color: #555;
+   	color:white;
+   }
+
+   </style>
 </head>
 <body style="background-color: grey;">
    <?php 
