@@ -14,8 +14,11 @@
 
    li {
    	float: left;
-   	padding-left: 5px;
-   	padding-right: 5px;
+   }
+   
+   li a {
+   	display:block;
+   	padding:8px;
    }
 
    li a.active {
