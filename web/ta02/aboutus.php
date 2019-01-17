@@ -21,9 +21,9 @@
    	padding:8px;
    }
 
-   li a.active {
-   	 background-color: #4CAF50;
-   	 color: white;
+   .active {
+   	background-color: lime;
+   	color: blue;
    }
 
    li a:hover:not(.active) {
