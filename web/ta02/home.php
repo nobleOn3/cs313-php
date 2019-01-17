@@ -9,12 +9,13 @@
    ul {
    	list-style-type: none;
    	margin:0;
-   	padding-left: 5px;
-   	padding-right: 5px;
+   	padding: 5px;
    }
 
    li {
    	float: left;
+   	padding-left: 5px;
+   	padding-right: 5px;
    }
 
    li a.active {
