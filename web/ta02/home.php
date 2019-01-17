@@ -21,7 +21,7 @@
    	padding:8px;
    }
 
-   li a.active {
+   .active {
    	 background-color: blue;
    	 color: white;
    }
