@@ -34,9 +34,11 @@
    </style>
 </head>
 <body style="background-color: grey;">
-   <?php 
-      include "./header.php"
-   ?>
+   <div>
+      <?php 
+         include "./header.php"
+      ?>
+   </div>
    <div>
       <?php 
          $welvar = NULL;
