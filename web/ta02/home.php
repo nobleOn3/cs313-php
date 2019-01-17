@@ -4,10 +4,12 @@
    <meta charset="utf-8"/>
    <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <title>Totally not Nike's</title>
-   <link rel="stylesheet" type="text/css" href="">
+   <!--<link rel="stylesheet" type="text/css" href="">-->
 </head>
 <body style="background-color: grey;">
-   <?php include('header.php'); ?>
+   <?php 
+      include("header.php"); 
+   ?>
    <div>
       <?php 
          $welvar = NULL;
