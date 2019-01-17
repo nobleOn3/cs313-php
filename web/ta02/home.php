@@ -22,8 +22,8 @@
    }
 
    .active {
-   	 background-color: blue;
-   	 color: white;
+   	 background-color: lime;
+   	 color: blue;
    }
 
    li a:hover:not(.active) {
