@@ -9,7 +9,8 @@
    ul {
    	list-style-type: none;
    	margin: 0;
-   	padding: 5px;
+   	padding-left: 5px;
+   	padding-right: 5px;
    }
 
    li {
