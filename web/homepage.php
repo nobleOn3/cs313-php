@@ -13,8 +13,8 @@
          echo "<p class='hello'>Today is " . date("m/d/Y") . "</p>";
          echo "<p class='hello'>Today is " . date("l") . "</p><br/>";
       ?>
-      <p class="intro">Hi, my name is Jessen Noble. Im a <b>software engineering major</b> at BYU-Idaho. I claim both Seattle, WA <b>and</b> Burley, ID as hometowns. </p>
-      <input type="button" onclick="document.getElementById('hello').innerHTML = 'Hi, my name is Jessen Noble. Im a <b>software engineering major</b> at BYU-Idaho. I claim both Seattle, WA <b>and</b> Burley, ID as hometowns.'" value="Click Here For more info about the creator!">
+
+      <input type="button" onclick="document.getElementById('hello').innerHTML = 'Hi, my name is Jessen Noble. Im a software engineering major at BYU-Idaho. I claim both Seattle, WA and Burley, ID as hometowns.'" value="Click Here For more info about the creator!">
       <h1 id="hello"></h1>
    </div>
  
