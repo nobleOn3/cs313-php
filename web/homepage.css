@@ -38,4 +38,6 @@
 
    img.seen {
       display: inline;
+      border-color: lime;
+      border: solid 5px;
    }
