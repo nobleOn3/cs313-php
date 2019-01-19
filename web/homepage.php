@@ -10,7 +10,7 @@
    <div class="center">
       <h1 class="title"><i>Noble's Homepage</i></h1>
       <?php 
-         echo "<p class='hello'>Today is " . date('l jS \of F Y') . "</p>";
+         echo "<p class='hello'>Today is " . date('l F jS Y') . "</p>";
       ?>
 
       <input type="button" onclick="document.getElementById('hello').innerHTML = 'Hi, my name is Jessen Noble. Im a software engineering major at BYU-Idaho. I claim both Seattle, WA and Burley, ID as hometowns.'; document.getElementById('me').className='seen'" value="Click here for more info about the creator!">

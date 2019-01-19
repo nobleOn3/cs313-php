@@ -19,6 +19,7 @@
    h1.title{
    	color: blue; 
    	font-family: courier;
+      font-size: 75px;
    }
 
    p.intro {
