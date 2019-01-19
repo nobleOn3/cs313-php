@@ -15,6 +15,7 @@
       ?>
 
       <input type="button" onclick="document.getElementById('hello').innerHTML = 'Hi, my name is Jessen Noble. Im a software engineering major at BYU-Idaho. I claim both Seattle, WA and Burley, ID as hometowns.'; document.getElementById('me').className='seen'" value="Click here for more info about the creator!">
+      <br/>
 
       <img src="me.jpg" alt="Picture of creator" id="me" class="hidden">
       <h1 id="hello"></h1>
