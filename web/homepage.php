@@ -8,12 +8,12 @@
 </head>
 <body>
    <div class="center">
-      <h1 class="title"><i>Noble's Homepage</i></h1>
+      <h1 id="title" class="title"><i>Noble's Homepage</i></h1>
       <?php 
-         echo "<p class='hello'>Today is " . date('l F jS Y') . "</p>";
+         echo "<p id='date' class='hello'>Today is " . date('l F jS Y') . "</p>";
       ?>
 
-      <input type="button" onclick="document.getElementById('hello').innerHTML = 'Hi, my name is Jessen Noble. Im a software engineering major at BYU-Idaho. I claim both Seattle, WA and Burley, ID as hometowns.'; document.getElementById('me').className='seen'" value="Click here for more info about the creator!">
+      <input type="button" onclick="document.getElementById('hello').innerHTML = 'Hi, my name is Jessen Noble. Im a software engineering major at BYU-Idaho. I claim both Seattle, WA and Burley, ID as hometowns. I enjoy coding and am excited to learn more about web engineering this semester.'; document.getElementById('me').className='seen'; document.getElementById('title').className='titleLime'; document.getElementById('date').className='helloLime'" value="Click here for more info about the creator!">
       <br/><br/><br/>
 
       <img src="me.jpg" alt="Picture of creator" id="me" class="hidden">

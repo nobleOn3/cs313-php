@@ -30,7 +30,7 @@
 
    #hello {
    	color: lime;
-   	font-size: 15px;
+   	font-size: 25px;
    }
 
    img.hidden {
@@ -41,4 +41,15 @@
       display: inline;
       border: solid 5px;
       border-color: lime;
+   }
+
+   .helloLime {
+      color: lime;
+      font-family: comic sans ms;
+   }
+
+   h1.titleLime {
+      color: lime; 
+      font-size: 75px;
+      font-family: courier;
    }
