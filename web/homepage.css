@@ -31,3 +31,11 @@
    	color: lime;
    	font-size: 15px;
    }
+
+   img.hidden {
+      display: none;
+   }
+
+   img.seen {
+      display: inline;
+   }

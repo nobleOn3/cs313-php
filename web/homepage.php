@@ -14,7 +14,9 @@
          echo "<p class='hello'>Today is " . date("l") . "</p><br/>";
       ?>
 
-      <input type="button" onclick="document.getElementById('hello').innerHTML = 'Hi, my name is Jessen Noble. Im a software engineering major at BYU-Idaho. I claim both Seattle, WA and Burley, ID as hometowns.'" value="Click Here For more info about the creator!">
+      <img src="me.jpg" alt="Picture of creator" id="me" class="hidden">
+
+      <input type="button" onclick="document.getElementById('hello').innerHTML = 'Hi, my name is Jessen Noble. Im a software engineering major at BYU-Idaho. I claim both Seattle, WA and Burley, ID as hometowns.'; document.getElementById('me').className='seen'" value="Click here for more info about the creator!">
       <h1 id="hello"></h1>
    </div>
  
