@@ -25,7 +25,8 @@
    	}
    	if (isset($_GET['aU'])) {
    		echo "You have been to Australia.";
-   }
+    }
+  }
 
    echo "Your name: $name<br/>";
    echo "Your email: $email<br/>";
