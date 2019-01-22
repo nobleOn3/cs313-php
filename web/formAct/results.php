@@ -4,8 +4,8 @@
    $major= $_GET['major'];
    $comments= $_GET['comment'];
 
-   echo "Your name: $name\n";
-   echo "Your email: $email\n";
-   echo "Your major: $major\n";
-   echo "Comment: $comments\n";
+   echo "Your name: $name<br/>";
+   echo "Your email: $email<br/>";
+   echo "Your major: $major<br/>";
+   echo "Comment: $comments<br/>";
    ?>
