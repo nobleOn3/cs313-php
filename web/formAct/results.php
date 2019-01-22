@@ -4,12 +4,6 @@
    $major= $_GET['major'];
    $comments= $_GET['comment'];
 
-   echo "Your name: $name<br/>";
-   echo "Your email: $email<br/>";
-   echo "Your major: $major<br/>";
-   echo "Comment: $comments<br/>";
-   displayPlaces();
-
    function displayPlaces {
    	if (isset($_GET['nA'])) {
    		echo "You have been to North America.";
@@ -31,6 +25,12 @@
    	}
    	if (isset($_GET['aU'])) {
    		echo "You have been to Australia.";
-   	}
+   }
+
+   echo "Your name: $name<br/>";
+   echo "Your email: $email<br/>";
+   echo "Your major: $major<br/>";
+   echo "Comment: $comments<br/>";
+   displayPlaces();
    }
    ?>
