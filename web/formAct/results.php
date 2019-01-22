@@ -12,25 +12,25 @@
 
    function displayPlaces {
    	if (isset($_GET['nA'])) {
-   		echo "You have been to North America."
+   		echo "You have been to North America.";
    	}
    	if (isset($_GET['sA'])) {
-   		echo "You have been to South America."
+   		echo "You have been to South America.";
    	}
    	if (isset($_GET['eU'])) {
-   		echo "You have been to Europe."
+   		echo "You have been to Europe.";
    	}
    	if (isset($_GET['asia'])) {
-   		echo "You have been to Asia."
+   		echo "You have been to Asia.";
    	}
    	if (isset($_GET['aF'])) {
-   		echo "You have been to Africa."
+   		echo "You have been to Africa.";
    	}
    	if (isset($_GET['ant'])) {
-   		echo "You have been to Antartica."
+   		echo "You have been to Antartica.";
    	}
    	if (isset($_GET['aU'])) {
-   		echo "You have been to Australia."
+   		echo "You have been to Australia.";
    	}
    }
    ?>
