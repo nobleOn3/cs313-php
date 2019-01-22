@@ -4,7 +4,7 @@
    $major= $_GET['major'];
    $comments= $_GET['comment'];
 
-   function displayPlaces {
+   function displayPlaces() {
    	if (isset($_GET['nA'])) {
    		echo "You have been to North America.";
    	}
