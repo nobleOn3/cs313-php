@@ -1,9 +1,4 @@
 <?php
-   $name = $_GET['Name'];
-   $email= $_GET['Email'];
-   $major= $_GET['major'];
-   $comments= $_GET['comment'];
-
    function displayPlaces() {
    	if (isset($_GET['nA'])) {
    		echo "You have been to North America.";
@@ -27,11 +22,18 @@
    		echo "You have been to Australia.";
     }
   }
+  ?>
+
+<?php
+   $name = $_GET['Name'];
+   $email= $_GET['Email'];
+   $major= $_GET['major'];
+   $comments= $_GET['comment'];
+
 
    echo "Your name: $name<br/>";
    echo "Your email: $email<br/>";
    echo "Your major: $major<br/>";
    echo "Comment: $comments<br/>";
    displayPlaces();
-   }
    ?>
