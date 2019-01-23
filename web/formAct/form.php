@@ -24,7 +24,7 @@
               $array = array("Computer Science", "Web Design and Development", "Computer Information Technology", "Computer Engineering");
               $array1 = array("cS", "wDD", "cIT", "cE");
               for($i = 0; $i < 4; $i++) {
-                 echo "<td colspan='2'><span>".$array[$i]."</span><input name='major' value='".$array1[$i]."'></td>";
+                 echo "<td colspan='2'><span>".$array[$i]."</span><input type='radio' name='major' value='".$array1[$i]."'></td>";
                }
             }
          ?>
