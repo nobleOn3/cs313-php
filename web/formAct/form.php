@@ -22,7 +22,7 @@
          <?php
             function displayMajors() {
               $array = array("Computer Science", "Web Design and Development", "Computer Information Technology", "Computer Engineering");
-              $array1 = array("cS", "wDD", "cIT", "cE");
+              $array1 = array("CS", "WDD", "CIT", "CE");
               for($i = 0; $i < 4; $i++) {
                  echo "<td colspan='2'><span>".$array[$i]."</span><input type='radio' name='major' value='".$array1[$i]."'></td>";
                }
