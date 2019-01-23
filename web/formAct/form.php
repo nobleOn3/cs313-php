@@ -19,14 +19,22 @@
          <span id="lNameResponse"></span>
          <br/>
 
-     <table style="width: 600px; font-family: tahoma; margin: auto">
-   	   	<tr>
-   	  	    <td colspan="2"><span>Computer Science</span><input id="card" type="radio"  name="major" value="cS"></td>
-   	  	    <td colspan="2"><span>Web Design and Development</span><input id="card" type="radio" name="major" value="wDD"></td>
-   	  	    <td colspan="2"><span>Computer Information Technology</span><input id="card" type="radio" name="major" value="cIT"></td>
-             <td colspan="2"><span>Computer Engineering</span><input id="card" type="radio" name="major" value="cE"></td>
-   	    </tr>
-   	 </table>
+         <?php
+            function displayMajors() {
+              $array = array("Computer Science", "Web Design and Development", "Computer Information Technology", "Computer Engineering");
+              $array1 = array("cS", "wDD", "cIT", "cE")
+              $
+              for($i = 0; $i < 4; $i++) {
+                 echo "<td colspan='2'><span>$array[$i]</span><input name='major' value='$array1($i)'></td>";
+               }
+            }
+         ?>
+
+         <?php
+            echo "<table style='width: 600px; font-family: tahoma; margin: auto'><tr>";
+            displayMajors();
+            echo "</tr></table>"
+         ?>
 
        <textarea name="comment" placeholder="Comment"></textarea>
 
