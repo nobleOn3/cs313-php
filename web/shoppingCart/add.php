@@ -1,7 +1,8 @@
 <?php 
    session_start();
 
-   array_merge($_SESSION['cart'], array("mDice"=>"10") );
+   //array_push($_SESSION['cart'], '10');
+   $_SESSION['cart']['mDice'] = "10";
  ?>
 
  <?php
