@@ -57,7 +57,7 @@ if(empty($SESSION['cart'])) {
          </form>
       </div>
    </div>
-   <?php array_push($_SESSION['cart'], "25"; ?>
+   <?php array_push($_SESSION['cart'], "25"); ?>
 
    <?php print_r($_SESSION['cart']); ?>
 
