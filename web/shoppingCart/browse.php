@@ -40,7 +40,6 @@ function printStuff() {
       <br/>
       <div>
          <form action="add.php" method="post">
-            <input type=hidden name="metal_dice" value="10">
             <input type='submit' value="Add to cart">
          </form>
       </div>
@@ -50,13 +49,40 @@ function printStuff() {
    <!--Second Product-->
    <div>
       <div>
+         <h2>Plastic Dice<h2>
+         <p>Our plastic dice are made...</p>
+      </div>
+      <br/>
+      <div>
+         <form action="addpDice.php" method="post">
+            <input type='submit' value="Add to cart">
+         </form>
+      </div>
+   </div>
+
+   <!--Third Product-->
+   <div>
+      <div>
          <h2>D&D Dungeon Master's Handbook<h2>
          <p>This official handbook will...</p>
       </div>
       <br/>
       <div>
          <form action="addDMHndbk.php" method="post">
-            <input type="hidden" name="DM's Handbook" value="45">
+            <input type='submit' value="Add to cart">
+         </form>
+      </div>
+   </div>
+
+   <!--Fourth Product-->
+   <div>
+      <div>
+         <h2>D&D Monster Manual<h2>
+         <p>This official monster manual will...</p>
+      </div>
+      <br/>
+      <div>
+         <form action="addmManual.php" method="post">
             <input type='submit' value="Add to cart">
          </form>
       </div>
