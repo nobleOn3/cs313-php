@@ -1,7 +1,8 @@
 <?php 
    session_start();
 
-   array_push($_SESSION['cart'], 'mManual');
+   //add another monster manual to cart
+   $_SESSION['cart']['monMnl'] = ++$_SESSION['num_of_monMnl'];
  ?>
 
  <?php

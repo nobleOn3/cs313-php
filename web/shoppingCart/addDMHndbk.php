@@ -1,7 +1,8 @@
 <?php 
    session_start();
 
-   array_push($_SESSION['cart'], 'dmbk');
+   //add another dmBk to cart
+   $_SESSION['cart']['dmBk'] = ++$_SESSION['num_of_dmBk'];
  ?>
 
  <?php

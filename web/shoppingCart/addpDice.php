@@ -1,7 +1,8 @@
 <?php 
    session_start();
 
-   array_push($_SESSION['cart'], 'pDice');
+    //add another plastic dice set to cart
+   $_SESSION['cart']['pDice'] = ++$_SESSION['num_of_pDice'];
  ?>
 
  <?php

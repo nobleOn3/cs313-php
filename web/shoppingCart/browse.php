@@ -6,6 +6,15 @@ if(empty($_SESSION['cart'])) {
    $_SESSION['cart'] = array();
 }
 
+if(!isset($_SESSION['num_of_mDice']) && !isset($_SESSION['num_of_mDice']) 
+   && !isset($_SESSION['num_of_mDice']) && !isset($_SESSION['num_of_mDice'])) {
+   $_SESSION['num_of_mDice'] = 0;
+   $_SESSION['num_of_pDice'] = 0;
+   $_SESSION['num_of_dmBk'] = 0;
+   $_SESSION['num_of_monMnl']= 0;
+}
+
+
 function printStuff() {
    print_r($_SESSION['cart']);
 }
