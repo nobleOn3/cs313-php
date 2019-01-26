@@ -5,6 +5,10 @@ session_start();
 if(empty($SESSION['cart'])) {
    $_SESSION['cart'] = array();
 }
+
+function printStuff() {
+   print_r($SESSION['cart']);
+}
 ?>
 
 <!DOCTYPE html>
@@ -57,9 +61,8 @@ if(empty($SESSION['cart'])) {
          </form>
       </div>
    </div>
-   <?php array_push($_SESSION['cart'], "25"); ?>
 
-   <?php print_r($_SESSION['cart']); ?>
+   <?php printstuff(); ?>
 
 
          <br/>
