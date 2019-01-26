@@ -1,6 +1,6 @@
 <?php
 //include the product class
-require("product_class.php");
+require("./product_class.php");
 // Start Session
 session_start();
 $_SESSION['cart']= array();
