@@ -1,9 +1,9 @@
 <?php 
-   //session_start();
+   session_start();
 
    array_push($_SESSION['cart'], "10");
+ ?>
 
-   print_r($_SESSION['cart']);
-
+ <?php
    header("Location: browse.php");
 ?>
