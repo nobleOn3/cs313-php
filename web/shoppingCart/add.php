@@ -1,6 +1,5 @@
 <?php 
    session_start();
-   $product = new product; 
 
-   if()
+   $_SESSION['cart']['mDice']='45';
 ?>

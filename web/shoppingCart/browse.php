@@ -1,7 +1,9 @@
 <?php
 // Start Session
 session_start();
-$_SESSION['cart']= array();
+if(empty($SESSION['cart'])) {
+   $_SESSION['cart'] = array();
+}
 ?>
 
 <!DOCTYPE html>
@@ -28,8 +30,6 @@ $_SESSION['cart']= array();
    <div>
       <div>
          <h2>Metal Dice<h2>
-         <br/>
-         <br/>
          <p>Our metal dice are beautiful...</p>
       </div>
       <br/>
@@ -46,13 +46,11 @@ $_SESSION['cart']= array();
    <div>
       <div>
          <h2>D&D Dungeon Master's Handbook<h2>
-         <br/>
-         <br/>
          <p>This official handbook will...</p>
       </div>
       <br/>
       <div>
-         <form action="add.php" method="post">
+         <form action="addDMHndbk.php" method="post">
             <input type="hidden" name="DM's Handbook" value="45">
             <input type='submit' value="Add to cart">
          </form>
