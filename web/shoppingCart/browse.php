@@ -19,7 +19,7 @@ function printStuff() {
 	<link rel="stylesheet" type="text/css" href="shopping_cart_style.css">
 
 </head>
-<body onload="document.getElementById('firstName').focus();">
+<body>
    <!--myName.value.search(/^[A-Z][a-z]+, ?[A-Z][a-z]+, ?[A-Z]\.?$/))-->
    <br/>
    <br/>
