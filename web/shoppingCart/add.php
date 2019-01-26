@@ -1,6 +1,6 @@
 <?php 
    session_start();
 
-   $_SESSION['cart']['mDice']='45';
+   $_SESSION['cart']='45';
    header("Location: browse.php");
 ?>
