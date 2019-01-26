@@ -7,7 +7,7 @@ if(empty($SESSION['cart'])) {
 }
 
 function printStuff() {
-   print_r($SESSION['cart']);
+   print_r($_SESSION['cart']);
 }
 ?>
 
