@@ -2,7 +2,7 @@
 // Start Session
 session_start();
 
-if(empty($SESSION['cart'])) {
+if(empty($_SESSION['cart'])) {
    $_SESSION['cart'] = array();
 }
 
