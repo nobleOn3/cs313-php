@@ -2,6 +2,6 @@
    session_start();
 
    $_SESSION['cart']='45';
-   
-   header("Location: browse.php");
+
+   print_r($_SESSION['cart']);
 ?>
