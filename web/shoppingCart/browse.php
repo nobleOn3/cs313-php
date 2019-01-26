@@ -57,6 +57,8 @@ if(empty($SESSION['cart'])) {
       </div>
    </div>
 
+   <?php print_r($_SESSION['cart'])
+
 
          <br/>
          <br/>
