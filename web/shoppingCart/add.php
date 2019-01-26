@@ -1,5 +1,5 @@
 <?php 
-   session_start();
+   //session_start();
 
    array_push($_SESSION['cart'], "10");
 
