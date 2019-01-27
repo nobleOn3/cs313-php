@@ -2,3 +2,7 @@ h1.thankyou {
 	font-size: 75px;
 	color: blue;
 }
+
+table, th, td{
+   	border: 1px solid black;
+}
