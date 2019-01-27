@@ -11,26 +11,26 @@ function display_metal_dice() {
 }
 
 function display_plastic_dice() {
-	if($_SESSION['cart']['pDice'] > 0) {
-      	echo "<div><div><h2>Metal Dice<h2><p>Our metal dice are beautiful...</p>
-           </div><br/><div><form action='remove.php' method='post'>
-           <input type='submit' value='Remove'></form></div></div><br/>";
-       } 
+    if($_SESSION['cart']['pDice'] > 0) {
+      	echo "<div><div><h3>Plastic Dice: <span>";
+      	echo $_SESSION['cart']['pDice'];
+      	echo "<span></div><br/><div><form action='removepDice.php' method='post'><input type='submit' value='Remove'></form></div></div><br/>";
+    }
 }
 
 function display_dungeon_master() {
 	if($_SESSION['cart']['dmBk'] > 0) {
-      	echo "<div><div><h2>Metal Dice<h2><p>Our metal dice are beautiful...</p>
-           </div><br/><div><form action='remove.php' method='post'>
-           <input type='submit' value='Remove'></form></div></div><br/>";
+      	echo "<div><div><h3>Dungeon Master Handbook(s): <span>";
+      	echo $_SESSION['cart']['dmBk'];
+      	echo "<span></div><br/><div><form action='removeDM.php' method='post'><input type='submit' value='Remove'></form></div></div><br/>";
        } 
 }
 
 function display_monster_manual() {
 	if($_SESSION['cart']['monMnl'] > 0) {
-      	echo "<div><div><h2><h2><p>Our metal dice are beautiful...</p>
-           </div><br/><div><form action='remove.php' method='post'>
-           <input type='submit' value='Remove'></form></div></div><br/>";
+      	echo "<div><div><h3>Monster Manual(s): <span>";
+      	echo $_SESSION['cart']['monMnl'];
+      	echo "<span></div><br/><div><form action='removeMonMnl.php' method='post'><input type='submit' value='Remove'></form></div></div><br/>";
        } 
 }
 
@@ -45,27 +45,20 @@ function display_monster_manual() {
 
 </head>
 <body>
-   <!--myName.value.search(/^[A-Z][a-z]+, ?[A-Z][a-z]+, ?[A-Z]\.?$/))-->
-   <br/>
-   <br/>
-   <br/>
-   <br/>
-
    <div class="main">
    	 <div>
         <h1>Your Cart</h1>
      </div>
 
-   <?php
-      display_metal_dice();
-   ?> 
-
-   <?php printstuff(); ?>
-
-
-         <br/>
-         <br/>
-         <br/>
+      <?php
+          display_metal_dice();
+          display_plastic_dice();
+          display_dungeon_master();
+          display_monster_manual();
+      ?> 
+       <br/>
+       <br/>
+       <br/>
    </div>
 </body>
 </html>

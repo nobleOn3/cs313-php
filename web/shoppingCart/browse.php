@@ -29,12 +29,6 @@ function printStuff() {
 
 </head>
 <body>
-   <!--myName.value.search(/^[A-Z][a-z]+, ?[A-Z][a-z]+, ?[A-Z]\.?$/))-->
-   <br/>
-   <br/>
-   <br/>
-   <br/>
-
    <div class="main">
    	 <div>
         <h1>Jessen's Tabletop RPG Supplies</h1>
