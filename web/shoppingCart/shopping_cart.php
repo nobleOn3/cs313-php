@@ -2,35 +2,46 @@
 // Start Session
 session_start();
 
+function makeTable() {
+	if($_SESSION['cart']['mDice'] > 0 || $_SESSION['cart']['pDice'] > 0 || $_SESSION['cart']['dmBk'] > 0 || $_SESSION['cart']['monMnl'] > 0) {
+		echo "<table><tr><td><h2>Product</h2></td><td><h2>Amount</h2></td><td><h2>Remove?<h2></td></tr>";
+		display_metal_dice();
+		display_plastic_dice();
+		display_dungeon_master();
+		display_monster_manual();
+		echo "</table><br/>"
+	}
+}
+
 function display_metal_dice() {
    if($_SESSION['cart']['mDice'] > 0) {
-      	echo "<div><div><h3>Metal Dice: <span>";
+      	echo "<tr><td><h3>Metal Dice<h3></td><span>";
       	echo $_SESSION['cart']['mDice'];
-      	echo "<span></div><div><form action='remove.php' method='post'><input type='submit' value='Remove'></form></div></div><br/>";
+      	echo "<span></td><td><form action='remove.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
        } 
 }
 
 function display_plastic_dice() {
     if($_SESSION['cart']['pDice'] > 0) {
-      	echo "<div><div><h3>Plastic Dice: <span>";
+      	echo "<tr><td><h3>Plastic Dice<h3></td><span>";
       	echo $_SESSION['cart']['pDice'];
-      	echo "<span></div><div><form action='removepDice.php' method='post'><input type='submit' value='Remove'></form></div></div><br/>";
+      	echo "<span></td><td><form action='removepDice.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
     }
 }
 
 function display_dungeon_master() {
 	if($_SESSION['cart']['dmBk'] > 0) {
-      	echo "<div><div><h3>Dungeon Master Handbook(s): <span>";
+      	echo "<tr><td><h3>Dungeon Master Manual(s)<h3></td><span>";
       	echo $_SESSION['cart']['dmBk'];
-      	echo "<span></div><div><form action='removeDM.php' method='post'><input type='submit' value='Remove'></form></div></div><br/>";
+      	echo "<span></td><td><form action='removeDM.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
        } 
 }
 
 function display_monster_manual() {
 	if($_SESSION['cart']['monMnl'] > 0) {
-      	echo "<div><div><h3>Monster Manual(s): <span>";
+      	echo "<tr><td><h3>Monster Manual(s)<h3></td><span>";
       	echo $_SESSION['cart']['monMnl'];
-      	echo "<span></div><div><form action='removeMonMnl.php' method='post'><input type='submit' value='Remove'></form></div></div><br/>";
+      	echo "<span></td><td><form action='removeMonMnl.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
        } 
 }
 
