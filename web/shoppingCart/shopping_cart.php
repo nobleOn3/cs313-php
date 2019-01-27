@@ -15,7 +15,7 @@ function makeTable() {
 
 function display_metal_dice() {
    if($_SESSION['cart']['mDice'] > 0) {
-      	echo "<tr><td><h3>Metal Dice<h3></td><td><span>";
+      	echo "<tr><td colspan='5'><h3>Metal Dice Set(s)<h3></td><td><span>";
       	echo $_SESSION['cart']['mDice'];
       	echo "<span></td><td><form action='remove.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
        } 
@@ -23,7 +23,7 @@ function display_metal_dice() {
 
 function display_plastic_dice() {
     if($_SESSION['cart']['pDice'] > 0) {
-      	echo "<tr><td><h3>Plastic Dice<h3></td><td><span>";
+      	echo "<tr><td colspan='5'><h3>Plastic Dice Set(s)<h3></td><td><span>";
       	echo $_SESSION['cart']['pDice'];
       	echo "<span></td><td><form action='removepDice.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
     }
@@ -31,7 +31,7 @@ function display_plastic_dice() {
 
 function display_dungeon_master() {
 	if($_SESSION['cart']['dmBk'] > 0) {
-      	echo "<tr><td><h3>Dungeon Master Manual(s)<h3></td><td><span>";
+      	echo "<tr><td colspan='5'><h3>Dungeon Master Manual(s)<h3></td><td><span>";
       	echo $_SESSION['cart']['dmBk'];
       	echo "<span></td><td><form action='removeDM.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
        } 
@@ -39,7 +39,7 @@ function display_dungeon_master() {
 
 function display_monster_manual() {
 	if($_SESSION['cart']['monMnl'] > 0) {
-      	echo "<tr><td><h3>Monster Manual(s)<h3></td><td><span>";
+      	echo "<tr><td colspan='5'><h3>Monster Manual(s)<h3></td><td><span>";
       	echo $_SESSION['cart']['monMnl'];
       	echo "<span></td><td><form action='removeMonMnl.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
        } 
