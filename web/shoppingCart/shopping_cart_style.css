@@ -28,6 +28,14 @@ span.center {
 	color: royalblue;
 }
 
+span {
+	color: royalblue;
+}
+
+h1, h2, h3 {
+	color: royalblue;
+}
+
 body {
 	background-color: salmon;
 }
