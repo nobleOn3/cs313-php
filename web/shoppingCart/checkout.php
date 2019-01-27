@@ -83,7 +83,7 @@ function calculate_total() {
         <a href="shopping_cart.php">Back to Cart</a>
         <h3>Your order: </h3>
         <?php makeTable(); ?>
-        <span class="center">Total: <?php calculate_total() ?></span>
+        <span class="center">Total: $<?php calculate_total(); ?></span>
       </div>
     </div>
     <hr/>

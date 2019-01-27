@@ -24,4 +24,5 @@ table.center {
 span.center {
 	text-align: center;
 	margin: auto;
+	font-size: 35px;
 }
