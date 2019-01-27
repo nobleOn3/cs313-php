@@ -4,9 +4,7 @@ session_start();
 
 function display_metal_dice() {
    if($_SESSION['cart']['mDice'] > 0) {
-      	echo "<div><div><h3>Metal Dice:<span>$_SESSION['cart']['mDice']<span>
-           </div><br/><div><form action='remove.php' method='post'>
-           <input type='submit' value='Remove'></form></div></div><br/>";
+      	echo "<div><div><h3>Metal Dice:<span>$_SESSION['cart']['mDice']<span></div><br/><div><form action='remove.php' method='post'><input type='submit' value='Remove'></form></div></div><br/>";
        } 
 }
 
