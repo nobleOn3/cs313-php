@@ -49,9 +49,10 @@ function displayName() {
     echo $_POST["name"];
 }
 
-function displayAddress(){
-   echo "$_POST['street'] $_POST['city'], $_POST['state'] $_POST['zip']";
+function displayAddress() {
+   echo $_POST['street']." ".$_POST['city'].",". $_POST['state']." ".$_POST['zip'];
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -71,10 +72,6 @@ function displayAddress(){
         <?php makeTable(); ?>
       </div>
     </div>
-    <hr/>
 
-    <div class="center">
-    
-    </div>
 </body>
 </html>
