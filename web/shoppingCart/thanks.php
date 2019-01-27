@@ -46,7 +46,8 @@ function display_monster_manual() {
 }
 
 function displayName() {
-    echo strip_tags($_POST["name"]);
+    //echo strip_tags($_POST["name"]);
+    echo $_POST["name"];
 }
 
 function displayAddress() {
