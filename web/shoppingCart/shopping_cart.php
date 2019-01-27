@@ -9,7 +9,7 @@ function makeTable() {
 		display_plastic_dice();
 		display_dungeon_master();
 		display_monster_manual();
-		echo "</table><br/>"
+		echo "</table><br/>";
 	}
 }
 
