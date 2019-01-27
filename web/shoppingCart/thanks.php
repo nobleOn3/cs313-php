@@ -46,7 +46,9 @@ function display_monster_manual() {
 }
 
 function displayName() {
+	echo "<span>";
     echo $_POST["name"];
+    echo "</span>";
 }
 
 function displayAddress() {
