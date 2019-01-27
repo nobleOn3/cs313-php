@@ -17,7 +17,7 @@ function display_metal_dice() {
    if($_SESSION['cart']['mDice'] > 0) {
         echo "<tr><td colspan='5'><h3>Metal Dice Set(s)<h3></td><td colspan='2'><span>";
         echo $_SESSION['cart']['mDice'];
-        echo "<span></td><td colspan='2'><form action='remove.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
+        echo "<span></td></tr>";
        } 
 }
 
@@ -25,7 +25,7 @@ function display_plastic_dice() {
     if($_SESSION['cart']['pDice'] > 0) {
         echo "<tr><td colspan='5'><h3>Plastic Dice Set(s)<h3></td><td colspan='2'><span>";
         echo $_SESSION['cart']['pDice'];
-        echo "<span></td><td colspan='2'><form action='removepDice.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
+        echo "<span></td></td></tr>";
     }
 }
 
@@ -33,7 +33,7 @@ function display_dungeon_master() {
   if($_SESSION['cart']['dmBk'] > 0) {
         echo "<tr><td colspan='5'><h3>Dungeon Master Manual(s)<h3></td><td colspan='2'><span>";
         echo $_SESSION['cart']['dmBk'];
-        echo "<span></td><td colspan='2'><form action='removeDM.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
+        echo "<span></td></tr>";
        } 
 }
 
@@ -41,8 +41,30 @@ function display_monster_manual() {
   if($_SESSION['cart']['monMnl'] > 0) {
         echo "<tr><td colspan='5'><h3>Monster Manual(s)<h3></td><td colspan='2'><span>";
         echo $_SESSION['cart']['monMnl'];
-        echo "<span></td><td colspan='2'><form action='removeMonMnl.php' method='post'><input type='submit' value='Remove'></form></td></tr>";
+        echo "<span></td></tr>";
        } 
+}
+
+function calculate_total() {
+  $_total = 0;
+  
+  if($_SESSION['cart']['mDice'] > 0 && $_SESSION['cart']['mDice'] != NULL) {
+     $_total += ($_SESSION['cart']['mDice'] * 10);
+  }
+
+  if($_SESSION['cart']['pDice'] > 0 && $_SESSION['cart']['pDice'] != NULL) {
+     $_total += ($_SESSION['cart']['pDice'] * 6);
+  }
+
+  if($_SESSION['cart']['dmBk'] > 0 && $_SESSION['cart']['dmBk'] != NULL) {
+     $_total += ($_SESSION['cart']['dmBk'] * 45);
+  }
+
+  if($_SESSION['cart']['mDice'] > 0 && $_SESSION['cart']['mDice'] != NULL) {
+     $_total += ($_SESSION['cart']['mDice'] * 40);
+  }
+
+  echo $_total;
 }
 ?>
 
@@ -62,6 +84,8 @@ function display_monster_manual() {
         <h3>Your order: </h3>
         <?php makeTable(); ?>
       </div>
+
+      <span class="center">Total: <?php calculate_total() ?></span>
     </div>
     <hr/>
 
