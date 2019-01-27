@@ -46,9 +46,7 @@ function display_monster_manual() {
 }
 
 function displayName() {
-	echo "<span>";
     echo $_POST["name"];
-    echo "</span>";
 }
 
 function displayAddress() {
@@ -68,9 +66,8 @@ function displayAddress() {
 <body>
     <div class="main">
    	  <div class="center">
-        <h1>Thank you</h1>
-        <?php displayName(); ?>
-        <h2>Your order will be sent to:</h2>
+        <h1 class="thankyou">Thank you <?php displayName(); ?>!</h1>
+        <h2>Your order will be sent to: <?php displayAddress(); ?></h2>
         <h3>Your order: </h3>
         <?php makeTable(); ?>
       </div>
