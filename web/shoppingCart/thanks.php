@@ -50,7 +50,7 @@ function displayName() {
 }
 
 function displayAddress() {
-   echo $_POST['street']." ".$_POST['city'].",". $_POST['state']." ".$_POST['zip'];
+   echo $_POST['street']." ".$_POST['city'].", ". $_POST['state']." ".$_POST['zip'];
 }
 
 ?>
