@@ -66,7 +66,7 @@ function display_monster_manual() {
     <hr/>
 
     <div class="center">
-      <form action="thanks.php">
+      <form action="thanks.php" method="post">
          <h2>Please enter your information</h2>
          <span>Name: </span><br/>
          <input class="info" type="text" name="name" id="name">
