@@ -62,10 +62,7 @@ function display_monster_manual() {
      </div>
 
       <?php
-          display_metal_dice();
-          display_plastic_dice();
-          display_dungeon_master();
-          display_monster_manual();
+          makeTable();
       ?> 
        <br/>
        <br/>
