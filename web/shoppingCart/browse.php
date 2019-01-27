@@ -38,6 +38,8 @@ function printStuff() {
    <div class="main">
    	 <div>
         <h1>Jessen's Tabletop RPG Supplies</h1>
+        <br/>
+        <a href="shopping_cart.php">Shopping Cart</a>
      </div>
 
    <!--First Product-->  
