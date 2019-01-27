@@ -3,7 +3,7 @@ h1.thankyou {
 	color: blue;
 }
 
-table, th, td{
+th, td{
    	border: 1px solid black;
 }
 
@@ -17,4 +17,6 @@ div.center {
 }
 table.center{
 	text-align: center;
+	margin: auto;
+	border: 1px solid black;
 }
