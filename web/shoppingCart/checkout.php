@@ -66,7 +66,7 @@ function display_monster_manual() {
     <hr/>
 
     <div class="center">
-      <form action="checkout.php">
+      <form action="thanks.php">
          <h2>Please enter your information</h2>
          <span>Name: </span><br/>
          <input class="info" type="text" name="name" id="name">
