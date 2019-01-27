@@ -10,3 +10,8 @@ table, th, td{
 td {
 	text-align: center;
 }
+
+div.center {
+	text-align: center;
+	width: 800px;
+}

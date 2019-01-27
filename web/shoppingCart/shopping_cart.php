@@ -57,15 +57,19 @@ function display_monster_manual() {
 </head>
 <body>
    <div class="main">
-   	 <div>
-        <h1>Your Cart</h1>
-     </div>
+   	  <div>
+         <h1>Your Cart</h1>
+         <a href="browse.php">Back to Browse</a>
+      </div>
 
       <?php
           makeTable();
-      ?> 
+      ?>
        <br/>
        <br/>
+       <div>
+       	   <a href="checkout.php">Confirm Purchase</a>
+       </div> 
        <br/>
    </div>
 </body>
