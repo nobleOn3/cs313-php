@@ -60,7 +60,7 @@ function display_monster_manual() {
         <h1>Confirm Your Order</h1>
         <a href="shopping_cart.php">Back to Cart</a>
         <h3>Your order: </h3>
-        <?php displayTable(); ?>
+        <?php makeTable(); ?>
       </div>
     </div>
     <hr/>
