@@ -2,7 +2,7 @@
    session_start();
 
    //remove a metal dice set from cart
-   $_SESSION['cart']['mDice'] = --$_SESSION['num_of_mDice'];
+   $_SESSION['cart']['monMnl'] = --$_SESSION['num_of_monMnl'];
  ?>
 
  <?php
