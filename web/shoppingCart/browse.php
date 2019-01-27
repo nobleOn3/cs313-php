@@ -31,7 +31,7 @@ function printStuff() {
 <body>
    <div class="main">
    	 <div>
-        <h1>Jessen's Tabletop RPG Supplies</h1>
+        <h1 class="">Jessen's Tabletop RPG Supplies</h1>
         <br/>
         <a href="shopping_cart.php">Shopping Cart</a>
      </div>
@@ -40,7 +40,7 @@ function printStuff() {
    <div>
       <div>
          <h2>Metal Dice<h2>
-         <p>Our metal dice are beautiful...</p>
+         <p>Our metal dice are beautiful. They are crafted from the most beautiful steel. The numbers are a light blue color that are engraved into the die.</p>
       </div>
       <br/>
       <div>
@@ -55,7 +55,7 @@ function printStuff() {
    <div>
       <div>
          <h2>Plastic Dice<h2>
-         <p>Our plastic dice are made...</p>
+         <p>Our plastic dice are made of the highest quality plastics. They come in a variety of colors, order a set today and be surprised by the colors you get!</p>
       </div>
       <br/>
       <div>
@@ -69,7 +69,7 @@ function printStuff() {
    <div>
       <div>
          <h2>D&D Dungeon Master's Handbook<h2>
-         <p>This official handbook will...</p>
+         <p>This official handbook will allow you to build entire campains, design dungeons, and reward players for their heroic deeds</p>
       </div>
       <br/>
       <div>
@@ -83,7 +83,7 @@ function printStuff() {
    <div>
       <div>
          <h2>D&D Monster Manual<h2>
-         <p>This official monster manual will...</p>
+         <p>This official monster manual is a great companion to the dungeon master's handbook. It gives the dungeon master access to the stats of a great many creatures that are fit for a variety of campains.</p>
       </div>
       <br/>
       <div>
@@ -92,9 +92,6 @@ function printStuff() {
          </form>
       </div>
    </div>
-
-   <?php printstuff(); ?>
-
 
          <br/>
          <br/>

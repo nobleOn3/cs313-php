@@ -46,11 +46,11 @@ function display_monster_manual() {
 }
 
 function displayName() {
-    echo $_POST["name"];
+    echo strip_tags($_POST["name"]);
 }
 
 function displayAddress() {
-   echo $_POST['street']." ".$_POST['city'].", ". $_POST['state']." ".$_POST['zip'];
+   echo strip_tags($_POST['street'])." ".strip_tags($_POST['city']).", ". strip_tags($_POST['state'])." ".strip_tags($_POST['zip']);
 }
 
 ?>
