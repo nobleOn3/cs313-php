@@ -4,7 +4,7 @@ session_start();
 
 function makeTable() {
   if($_SESSION['cart']['mDice'] > 0 || $_SESSION['cart']['pDice'] > 0 || $_SESSION['cart']['dmBk'] > 0 || $_SESSION['cart']['monMnl'] > 0) {
-    echo "<table class='center'><tr><td colspan='5'><h2>Product</h2></td><td colspan='2'><h2>Amount</h2></td><td colspan='2'></td></tr>";
+    echo "<table class='center'><tr><td colspan='5'><h2>Product</h2></td><td colspan='2'><h2>Amount</h2></td></tr>";
     display_metal_dice();
     display_plastic_dice();
     display_dungeon_master();
