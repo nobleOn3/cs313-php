@@ -20,7 +20,7 @@ $db = get_db();
 
 		<?php
 		   $stmt = $db->prepare("SELECT name, main_color, image_file FROM thank_you_images");
-		   $stmt = $db->execute();
+		   $stmt->execute();
 
 		   while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
 		   	{
