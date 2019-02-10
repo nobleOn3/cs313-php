@@ -19,16 +19,15 @@ $db = get_db();
 		<h1>Thank You Designs</h1>
 
 		<?php
-		   $stmt = $db->prepare("SELECT name, main_color, image_file FROM thank_you_images");
+		   $stmt = $db->prepare("SELECT name, image_file FROM thank_you_images");
 		   $stmt->execute();
 
 		   while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
 		   	{
 		   		$name = $row['name'];
-		   		$color = $row['main_color'];
 		   		$image_file = $row['image_file'];
 
-		   		echo "<p>$name (main color is: $color)</p>";
+		   		echo "<p>$name</p>";
 		   	}
 
 		?>
