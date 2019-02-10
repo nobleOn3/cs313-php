@@ -14,11 +14,12 @@ function get_db() {
 		$dbopts = parse_url($dbUrl);
 
 		$db_host = $dbopts["host"];
-		$db_port = $dbopts["user"];
+		$db_port = $dbopts["port"];
+		$db_user = $dbopts["user"];
 		$db_pass = $dbopts["pass"];
 		$db_name = ltrim($dbopts["path"], '/');
 
-		$db = new PDO("psql:host=$db_host;port=$db_port;dbname=$db_name", $dbUser, $dbPassword);
+		$db = new PDO("psql:host=$db_host;port=$db_port;dbname=$db_name", $db_user, $db_pass);
 
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 	} catch (PDOException $ex) {
