@@ -13,6 +13,7 @@ $db = get_db();
 <html>
 <head>
 	<title>Thank You list</title>
+	<link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
 	<div>
@@ -27,7 +28,7 @@ $db = get_db();
 		   		$name = $row['name'];
 		   		$image_file = $row['image_file'];
 
-		   		echo "<p>$name</p>";
+		   		echo "<p>$name</p><a href='$image_file'>See image here!</a>";
 		   	}
 
 		?>
