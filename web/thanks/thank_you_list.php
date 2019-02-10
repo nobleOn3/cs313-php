@@ -13,7 +13,7 @@ $db = get_db();
 <html>
 <head>
 	<title>Thank You list</title>
-	<link rel="stylesheet" type="text/css" href="">
+	<link rel="stylesheet" type="text/css" href="thanks.css">
 </head>
 <body>
 	<div class="center">
