@@ -1,0 +1,23 @@
+ div.center {
+   	text-align: center; 
+   	margin: auto; 
+   	width: 800px;
+   }
+
+   h1.title {
+   	color: blue; 
+    font-size: 75px;
+   	font-family: courier;
+   }
+
+   body {
+      background-color: grey;
+   }
+
+   h1.titleLime {
+      color: lime; 
+      font-size: 75px;
+      font-family: courier;
+   }
+
+   

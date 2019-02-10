@@ -16,8 +16,8 @@ $db = get_db();
 	<link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
-	<div>
-		<h1>Thank You Designs</h1>
+	<div class="center">
+		<h1 class="titleLime">Thank You Designs</h1>
 
 		<?php
 		   $stmt = $db->prepare("SELECT name, image_file FROM thank_you_images");

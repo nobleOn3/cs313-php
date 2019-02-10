@@ -15,14 +15,14 @@ $db = get_db();
 	<link rel="stylesheet" type="text/css" href="">
 </head>
 <body>
-	<div>
+	<div class="center">
 
 		<?php
 
 		    $name = $_GET['i_name'];
 		    $file = $_GET['i_file'];
 
-		    echo "<h1>$name</h1>";
+		    echo "<h1 class='title'>$name</h1>";
 
 		   	echo "<img src='$file' alt = '$name'/>";
 
