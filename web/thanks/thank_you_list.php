@@ -28,7 +28,7 @@ $db = get_db();
 		   		$name = $row['name'];
 		   		$image_file = $row['image_file'];
 
-		   		echo "<p>$name</p><a href='$image_file'>See image here!</a>";
+		   		echo "<p>$name</p><a href='display_pic.php?i_name=$name&i_file=$image_file'>See image here!</a>";
 		   	}
 
 		?>
