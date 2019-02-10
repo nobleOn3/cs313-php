@@ -9,21 +9,22 @@ function get_db() {
 
 	try {
 
-		$dbUrl = getenv('DATABASE_URL');
+		$db_url = getenv('DATABASE_URL');
 
-		$dbopts = parse_url($dbUrl);
+		$db_opts = parse_url($db_url);
 
-		$db_host = $dbopts["host"];
-		$db_port = $dbopts["port"];
-		$db_user = $dbopts["user"];
-		$db_pass = $dbopts["pass"];
-		$db_name = ltrim($dbopts["path"], '/');
+		$db_host = $db_opts["host"];
+		$db_port = $db_opts["port"];
+		$db_user = $db_opts["user"];
+		$db_pass = $db_opts["pass"];
+		$db_name = ltrim($db_opts["path"], '/');
 
-		$db = new PDO("psql:host=$db_host;port=$db_port;dbname=$db_name", $db_user, $db_pass);
+		$db = new PDO("pgsql:host=$db_host;port=$db_port;dbname=$db_name", $db_user, $db_pass);
 
 		$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-	} catch (PDOException $ex) {
-		echo "Error connecting to DB. Details: $ex";
+
+	} catch (PDOException $some_prob) {
+		echo "Error connecting to DB. Details: $some_prob";
 		die();
 	}
 
