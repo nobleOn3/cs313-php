@@ -17,7 +17,6 @@
    $statement = $db->prepare("INSERT INTO script_topics(script_id, topic_id) VALUES ($new_id, $topic);");
    $statement->execute();
 
-
-
-
+   header('Location: ./scriptureList.php');
+   die();
 ?>
