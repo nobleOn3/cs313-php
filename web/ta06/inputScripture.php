@@ -34,7 +34,7 @@ $db = get_db();
 
 		while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 			$name = $row['name'];
-			$id = $row['id']
+			$id = $row['id'];
 			echo "$name <input type='checkbox' name='topic' value='$id'><br/>";
 		}
 
