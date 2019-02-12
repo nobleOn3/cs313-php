@@ -19,9 +19,13 @@ $db = get_db();
 
 		<form action="insertScripture.php" method="POST">
 			Book: <input type="text" name="book" id="book">
+			<br/>
 			Chapter: <input type="text" name="chapter" id="chapter">
+			<br/>
 			Verse: <input type="text" name="verse" id="verse">
+			<br/>
 			Content: <input type="textarea" name="content" id="content">
+			<br/>
 
 
 		<?php
@@ -30,7 +34,7 @@ $db = get_db();
 
 		while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 			$name = $row['name'];
-			echo "$name . ' ' <input type='checkbox' name='topic'>";
+			echo "$name <input type='checkbox' name='topic'><br/>";
 		}
 
 		?>
