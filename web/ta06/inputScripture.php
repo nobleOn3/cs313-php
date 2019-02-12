@@ -29,15 +29,18 @@ $db = get_db();
 
 
 		<?php
-		$statement = $db->prepare("SELECT name FROM topics");
+		$statement = $db->prepare("SELECT id, name FROM topics");
 		$statement->execute();
 
 		while($row = $statement->fetch(PDO::FETCH_ASSOC)) {
 			$name = $row['name'];
-			echo "$name <input type='checkbox' name='topic'><br/>";
+			$id = $row['id']
+			echo "$name <input type='checkbox' name='topic' value='$id'><br/>";
 		}
 
 		?>
+
+		<input type="submit" value="Submit Scripture">
 
         </form>
 
