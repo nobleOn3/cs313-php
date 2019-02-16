@@ -1,13 +1,3 @@
-<?php
-/***********************************************
-* This page allows a user to create an 
-* "account".
-***********************************************/
-
-require "dbConnect.php";
-$db = get_db();
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,9 +8,10 @@ $db = get_db();
 	<div class="center">
 		<h1 class="titleLime">Login</h1>
 
-        <form action="addNewUser.php" method="POST">
+        <form action="add_new_user.php" method="POST">
         	Username: <input type="text" name="username"/><br/><br/>
         	Password: <input type="text" name="pass"/><br/><br/>
+        	First and Last Name: <input type="text" name="name"/><br/><br/>
         	<input type="submit" value="Sign Up!" />
         </form>
 
