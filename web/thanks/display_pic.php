@@ -28,7 +28,7 @@ $db = get_db();
 
 		   	echo "<img src='$file' alt = '$name'/>";
 
-		   	echo "<form action='add_user_fav.php?user=$user&file=$i_file' method='POST'><input type='submit' value='Add to Favorites'/></form>;
+		   	echo "<form action='add_user_fav.php?user=$user&file=$i_file' method='POST'><input type='submit' value='Add to Favorites'/></form>";
 		?>
 
 
