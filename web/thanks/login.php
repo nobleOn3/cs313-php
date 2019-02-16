@@ -19,8 +19,8 @@ $db = get_db();
 		<h1 class="titleLime">Login</h1>
 
         <form action="addNewUser.php" method="POST">
-        	Username: <input type="text" name="username"/><br/>
-        	Password: <input type="text" name="pass"/><br/>
+        	Username: <input type="text" name="username"/><br/><br/>
+        	Password: <input type="text" name="pass"/><br/><br/>
         	<input type="submit" value="Sign Up!" />
         </form>
 
