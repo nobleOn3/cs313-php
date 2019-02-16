@@ -50,7 +50,7 @@ function add_pic() {
 		   	echo "<img src='$file' alt = '$name'/>";
 		?>
 
-		<input type="button" onClick="<?php add_pic()?>;" value="Add to favorites"/>
+		<button onClick="<?php add_pic()?>;" value="Add to favorites"/>
 
 	</div>
 </body>
