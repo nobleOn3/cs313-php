@@ -19,16 +19,31 @@ $db = get_db();
 	<div class="center">
 		<h1 class="titleLime">Thank You Designs</h1>
 
+        <?php
+		   // $stmt = $db->prepare("SELECT name, image_file FROM thank_you_images");
+		   // $stmt->execute();
+
+		   // while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
+		   // 	{
+		   // 		$name = $row['name'];
+		   // 		$image_file = $row['image_file'];
+
+		   // 		echo "<p>$name</p><a href='display_pic.php?i_name=$name&i_file=$image_file'>See image here!</a>";
+		   // 	}
+
+		?>
+
 		<?php
 		   $stmt = $db->prepare("SELECT name, image_file FROM thank_you_images");
 		   $stmt->execute();
+		   $user = $_POST['user'];
 
 		   while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
 		   	{
 		   		$name = $row['name'];
 		   		$image_file = $row['image_file'];
 
-		   		echo "<p>$name</p><a href='display_pic.php?i_name=$name&i_file=$image_file'>See image here!</a>";
+		   		echo "<p>$name</p><a href='display_pic.php?i_name=$name&i_file=$image_file&user=$user'>See image here!</a>";
 		   	}
 
 		?>

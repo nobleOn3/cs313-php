@@ -17,6 +17,8 @@ $stmt->bindValue(':pass', $pass, PDO::PARAM_STR);
 $stmt->bindValue(':user_r', $name, PDO::PARAM_STR);
 $stmt->execute();
 
+
+
 $new_page = "thank_you_list.php?user=$user";
 header("Location: $new_page");
 die();
