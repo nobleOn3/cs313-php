@@ -36,7 +36,7 @@ $db = get_db();
 		<?php
 		   $stmt = $db->prepare("SELECT name, image_file FROM thank_you_images");
 		   $stmt->execute();
-		   $user = $_POST['user'];
+		   $user = $_GET['user'];
 
 		   while ($row = $stmt->fetch(PDO::FETCH_ASSOC))
 		   	{

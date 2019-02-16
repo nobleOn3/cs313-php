@@ -26,4 +26,5 @@ $stmt->execute();
 
 header("Location: thank_you_list.php");
 die();
+
 ?>
