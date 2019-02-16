@@ -7,27 +7,6 @@
 require "dbConnect.php";
 $db = get_db();
 
-function add_pic() {
-    $file = $_GET['i_file'];
-	$user = $_GET['user'];
-
-    $query = "SELECT id FROM users WHERE user = $user";
-	$stmt = $db->prepare($query);
-	$stmt->execute();
-	$user_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-	$query = "SELECT id FROM thank_you_images WHERE image_file = $i_file";
-    $stmt = $db->prepare($query);
-	$stmt->execute();
-	$img_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-	$query = "INSERT INTO user_favorites(user_id, image_id) VALUES ($user_id, $img_id)";
-    $stmt = $db->prepare($query);
-	$stmt->execute();
-
-	header("Location: thank_you_list.php");
-	die();
-}
 ?>
 
 <!DOCTYPE html>
@@ -48,9 +27,10 @@ function add_pic() {
 		    echo "<h1 class='title'>$name</h1>";
 
 		   	echo "<img src='$file' alt = '$name'/>";
+
+		   	echo "<form action='add_user_fav.php?user=$user&file=$i_file' method='POST'><input type='submit' value='Add to Favorites'/></form>;
 		?>
 
-		<button onClick="<?php add_pic()?>;" value="Add to favorites"/>
 
 	</div>
 </body>
