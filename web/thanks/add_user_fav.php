@@ -20,7 +20,7 @@ $user_array = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 foreach ($user_array as $user1)
 {
-   $user_id = $user_array['id'];
+   $user_id = $user1['id'];
    echo "$user_id";
 }
 
