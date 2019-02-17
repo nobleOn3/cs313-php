@@ -10,7 +10,7 @@ $db = get_db();
 $i_file = $_GET['i_file'];
 $user = $_GET['user'];
 
-echo "Si_file";
+echo "$i_file";
 echo "$user";
 
 // $query = "SELECT id FROM users WHERE user = '$user'";
