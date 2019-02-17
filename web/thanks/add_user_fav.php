@@ -13,13 +13,17 @@ $user = $_GET['user'];
 // echo "$i_file";
 // echo "$user";
 
-$query = "SELECT id FROM users WHERE user = '$user'";
+$query = "SELECT id FROM users WHERE name = '$user'";
 $stmt = $db->prepare($query);
 $stmt->execute();
 $user_array = $stmt->fetchAll(PDO::FETCH_ASSOC);
-$user_id = $user_array['id'];
+foreach ($courses as $course) {
+	$user_id = $user_array['id'];
+	echo "$user_id";
+}
+// $user_id = $user_array['id'];
 
-echo "$user_id";
+// echo "$user_id";
 
 // $query = "SELECT id FROM thank_you_images WHERE image_file = '$i_file'";
 // $stmt = $db->prepare($query);
