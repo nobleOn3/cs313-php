@@ -17,8 +17,12 @@ $query = "SELECT id FROM users WHERE name = '$user'";
 $stmt = $db->prepare($query);
 $stmt->execute();
 $user_array = $stmt->fetchAll(PDO::FETCH_ASSOC);
-$user_id = $user_array['id'];
-echo "$user_id";
+
+foreach ($user_array as $user1)
+{
+   $user_id = $user_array['id'];
+   echo "$user_id";
+}
 
 // $user_id = $user_array['id'];
 
