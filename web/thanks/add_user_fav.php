@@ -13,12 +13,14 @@ $user = $_GET['user'];
 $query = "SELECT id FROM users WHERE user = '$user'";
 $stmt = $db->prepare($query);
 $stmt->execute();
-$user_id = $stmt->fetchAll(PDO::FETCH_ASSOC)[0];
+$user_array = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$user_id = $user_array['id'];
 
 $query = "SELECT id FROM thank_you_images WHERE image_file = '$i_file'";
 $stmt = $db->prepare($query);
 $stmt->execute();
-$img_id = $stmt->fetchAll(PDO::FETCH_ASSOC)[0];
+$img_array = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$img_id = $img_array['id'];
 
 $query = "INSERT INTO user_favorites(user_id, image_id) VALUES ($user_id, $img_id)";
 $stmt = $db->prepare($query);
