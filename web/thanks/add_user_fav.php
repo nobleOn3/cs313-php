@@ -21,24 +21,22 @@ $user_array = $stmt->fetchAll(PDO::FETCH_ASSOC);
 foreach ($user_array as $user1)
 {
    $user_id = $user1['id'];
-   echo "$user_id";
 }
 
-// $user_id = $user_array['id'];
+$query = "SELECT id FROM thank_you_images WHERE image_file = '$i_file'";
+$stmt = $db->prepare($query);
+$stmt->execute();
+$img_array = $stmt->fetchAll(PDO::FETCH_ASSOC);
+foreach ($img_array as $img1)
+{
+   $img_id = $img1['id'];
+}
 
-// echo "$user_id";
+$query = "INSERT INTO user_favorites(user_id, image_id) VALUES ($user_id, $img_id)";
+$stmt = $db->prepare($query);
+$stmt->execute();
 
-// $query = "SELECT id FROM thank_you_images WHERE image_file = '$i_file'";
-// $stmt = $db->prepare($query);
-// $stmt->execute();
-// $img_array = $stmt->fetchAll(PDO::FETCH_ASSOC);
-// $img_id = $img_array['id'];
-
-// $query = "INSERT INTO user_favorites(user_id, image_id) VALUES ($user_id, $img_id)";
-// $stmt = $db->prepare($query);
-// $stmt->execute();
-
-// header("Location: thank_you_list.php");
-// die();
+header("Location: thank_you_list.php");
+die();
 
 ?>
