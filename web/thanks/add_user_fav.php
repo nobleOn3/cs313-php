@@ -10,14 +10,16 @@ $db = get_db();
 $i_file = $_GET['i_file'];
 $user = $_GET['user'];
 
-echo "$i_file";
-echo "$user";
+// echo "$i_file";
+// echo "$user";
 
-// $query = "SELECT id FROM users WHERE user = '$user'";
-// $stmt = $db->prepare($query);
-// $stmt->execute();
-// $user_array = $stmt->fetchAll(PDO::FETCH_ASSOC);
-// $user_id = $user_array['id'];
+$query = "SELECT id FROM users WHERE user = '$user'";
+$stmt = $db->prepare($query);
+$stmt->execute();
+$user_array = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$user_id = $user_array['id'];
+
+echo "$user_id";
 
 // $query = "SELECT id FROM thank_you_images WHERE image_file = '$i_file'";
 // $stmt = $db->prepare($query);
