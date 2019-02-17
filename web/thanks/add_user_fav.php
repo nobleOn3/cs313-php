@@ -7,7 +7,7 @@
 require "dbConnect.php";
 $db = get_db();
 
-$file = $_GET['i_file'];
+$i_file = $_GET['i_file'];
 $user = $_GET['user'];
 
 $query = "SELECT id FROM users WHERE user = $user";

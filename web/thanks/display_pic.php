@@ -21,14 +21,14 @@ $db = get_db();
 		<?php
 
 		    $name = $_GET['i_name'];
-		    $file = $_GET['i_file'];
+		    $i_file = $_GET['i_file'];
 		    $user = $_GET['user'];
 
 		    echo "<h1 class='title'>$name</h1>";
 
 		   	echo "<img src='$file' alt = '$name'/>";
 
-		   	echo "<form action='add_user_fav.php?user=$user&file=$i_file' method='POST'><input type='submit' value='Add to Favorites'/></form>";
+		   	echo "<form action='add_user_fav.php?user=$user&i_file=$i_file' method='POST'><input type='submit' value='Add to Favorites'/></form>";
 		?>
 
 
