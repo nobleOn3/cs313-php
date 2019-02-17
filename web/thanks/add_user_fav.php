@@ -36,7 +36,7 @@ $query = "INSERT INTO user_favorites(user_id, image_id) VALUES ($user_id, $img_i
 $stmt = $db->prepare($query);
 $stmt->execute();
 
-header("Location: thank_you_list.php");
+header("Location: thank_you_list.php?user=$user");
 die();
 
 ?>
