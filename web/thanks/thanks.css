@@ -14,9 +14,15 @@
       background-color: grey;
    }
 
-   .titleLime {
+   h1.titleLime {
       color: lime; 
       font-size: 75px;
+      font-family: courier;
+   }
+
+   h3.titleLime {
+      color: lime; 
+      font-size: 25px;
       font-family: courier;
    }
 
