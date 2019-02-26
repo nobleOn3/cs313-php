@@ -9,6 +9,7 @@ $db = get_db();
 
 $user = htmlspecialchars($_POST['username']);
 $pass = htmlspecialchars($_POST['pass']);
+$pass_real = NULL;
 
 $stmt = $db->prepare("SELECT pass FROM users WHERE user = '$user'");
 $stmt->execute();
