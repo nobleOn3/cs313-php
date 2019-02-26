@@ -15,21 +15,20 @@ $stmt->execute();
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $pass_real = $row['pass'];
     echo "$pass_real is here!";
-   }
 }
 
-if(password_verify("$pass", "$pass_real")) {
-	echo "$pass_real is equal to $pass";
-   // $new_page = "thank_you_list.php?user=$user";
-   // header("Location: $new_page");
-   // die();
-}
+// if(password_verify("$pass", "$pass_real")) {
+// 	echo "$pass_real is equal to $pass";
+//    // $new_page = "thank_you_list.php?user=$user";
+//    // header("Location: $new_page");
+//    // die();
+// }
 
-else {
-	echo "$pass_real is not equal to $pass";
-	// $new_page = "login_current_user.php";
- //    header("Location: $new_page");
- //    die();
-}
+// else {
+// 	echo "$pass_real is not equal to $pass";
+// 	// $new_page = "login_current_user.php";
+//  //    header("Location: $new_page");
+//  //    die();
+// }
 
 ?>
