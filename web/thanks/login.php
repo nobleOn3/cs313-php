@@ -12,7 +12,7 @@
         	Username: <input type="text" name="username"/><br/><br/>
         	Password: <input type="text" name="pass"/><br/><br/>
         	First and Last Name: <input type="text" name="name"/><br/><br/>
-        	<input type="submit" value="Sign Up!" />
+        	<input type="submit" value="Create Account" />
         </form>
 
 	</div>

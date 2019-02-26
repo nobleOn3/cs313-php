@@ -11,6 +11,8 @@ $user = htmlspecialchars($_POST['username']);
 $pass = htmlspecialchars($_POST['pass']);
 $name = htmlspecialchars($_POST['name']);
 
+$pass_hash = password_hash("$pass", PASSWORD_DEFAULT);
+
 $stmt = $db->prepare('INSERT INTO users(name, pass, user_real) VALUES (:user, :pass, :user_r);');
 $stmt->bindValue(':user', $user, PDO::PARAM_STR);
 $stmt->bindValue(':pass', $pass, PDO::PARAM_STR);
