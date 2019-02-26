@@ -10,7 +10,7 @@ $db = get_db();
 $user = htmlspecialchars($_POST['username']);
 $pass = htmlspecialchars($_POST['pass']);
 
-$stmt = $db->prepare("SELECT pass FROM users WHERE user = '$user'");
+$stmt = $db->prepare("SELECT pass FROM users WHERE name = '$user'");
 $stmt->execute();
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $pass_real = $row['pass'];
