@@ -15,6 +15,7 @@ $stmt->execute();
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $pass_real = $row['pass'];
     echo "$pass_real is here!";
+    echo "Stuff!";
 }
 
 // if(password_verify("$pass", "$pass_real")) {
