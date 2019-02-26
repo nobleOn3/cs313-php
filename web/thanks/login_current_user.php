@@ -7,8 +7,9 @@
 <body>
 	<div class="center">
 		<h1 class="titleLime">Sign In Current User</h1>
-                <pre>Not a current user?</pre>
+                <h3 class="titleLime">Not a current user?</h3>
                 <a href='./login.php'>Sign up here!</a> 
+                <br/><br/><br/>
 
         <form action="sign_in.php" method="POST">
         	Username: <input type="text" name="username"/><br/><br/>
