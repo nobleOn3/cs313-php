@@ -13,7 +13,7 @@ $pass = htmlspecialchars($_POST['pass']);
 $stmt = $db->prepare("SELECT pass FROM users WHERE user = '$user'");
 $stmt->execute();
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-    $pass_real = $row['name'];
+    $pass_real = $row['pass'];
 }
 
 if(password_verify("$pass", "$pass_real")) {
