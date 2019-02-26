@@ -15,6 +15,13 @@ $stmt = $db->prepare("SELECT pass FROM users WHERE user = '$user'");
 $stmt->execute();
 while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     $pass_real = $row['pass'];
+    
+    if(password_verify("$pass", "$pass_real")) {
+	echo "$pass_real is equal to $pass";
+   // $new_page = "thank_you_list.php?user=$user";
+   // header("Location: $new_page");
+   // die();
+   }
 }
 
 if(password_verify("$pass", "$pass_real")) {
